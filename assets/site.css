@@ -5,3 +5,5 @@
 /* Keep the Japanese headline on natural phrase boundaries at every width. */
 .hero h1{font-size:clamp(36px,4vw,56px);white-space:pre-line}
 @media(max-width:620px){.hero h1{font-size:36px}}
+
+.release-note{margin-top:28px;font-size:14px;max-width:850px}
