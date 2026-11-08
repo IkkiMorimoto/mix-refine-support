@@ -1,6 +1,6 @@
 # アプリ紹介サイト構成仕様書
 
-更新日：2026-11-07
+更新日：2026-11-08
 
 ## 目的
 
@@ -12,7 +12,9 @@ Mix Refineの既存サイトを活かし、Media Scouterなど複数アプリか
 | --- | --- |
 | index.html | アプリ一覧。Mix RefineとMedia Scouterのカード |
 | mix-refine.html | 旧index.htmlの製品紹介を継承 |
-| media-scouter.html | macOS向けアプリの開発中案内 |
+| media-scouter.html | macOS向けアプリの製品紹介 |
+| media-scouter-support.html | Media Scouterのサポート |
+| media-scouter-privacy.html | Media Scouterのプライバシーポリシー |
 | guide.html | Mix Refineの使い方。既存URL・本文を維持 |
 | support.html | Mix Refineのサポート。既存URL・本文を維持 |
 | privacy.html | Mix Refineのプライバシー。既存URL・本文を維持 |
@@ -27,7 +29,7 @@ Mix Refineの本文・スクリーンショット・日英翻訳を継承する�
 
 ## Media Scouterの扱い
 
-Video Review & Inspection、macOS、開発中を表示。公開日・価格・OS最低要件・未検証の提供機能・ダウンロードURLは掲載しない。正式アイコンとスクリーンショット、提供機能が確定したら当該ページを拡充する。
+Video Review & Inspection、macOSを表示。リリース後の製品紹介として、開発中・公開予告の表記を掲載しない。説明・サポート・プライバシーへの導線を維持する。公開日・価格・OS最低要件・未検証の提供機能・ダウンロードURLは掲載しない。正式アイコンとスクリーンショット、提供機能が確定したら当該ページを拡充する。
 
 ## 運用
 
