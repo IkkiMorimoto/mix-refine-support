@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spatial Checker Privacy Policy</title>
+<meta name="description" content="Spatial Checkerのプライバシーポリシー。">
+<style>
+:root{color-scheme:dark;--text:#f3f5f7;--muted:#bac5d1;--accent:#a8dbff;--border:#354354}*{box-sizing:border-box}body{margin:0;background:#0d141e;color:var(--text);font:16px/1.75 system-ui,sans-serif}.wrap{width:min(960px,calc(100% - 36px));margin:auto}header,footer{border-block-end:1px solid var(--border);padding:20px 0}nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.brand{font-weight:700;margin-right:auto}a{color:var(--accent);text-underline-offset:4px}button,.cta{font:inherit;border:1px solid var(--border);color:var(--text);background:#172636;border-radius:10px;padding:8px 14px}button{cursor:pointer}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.hero{padding:54px 0 32px}.logo{display:block;width:min(100%,420px);height:auto;border-radius:12px}h1{font-size:clamp(34px,6vw,62px);line-height:1.18;margin:18px 0}h2{font-size:21px;line-height:1.5;margin:0}p{color:var(--muted)}.lead{font-size:19px;max-width:740px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,350px),1fr));gap:16px;margin-bottom:50px}article{padding:22px;border:1px solid var(--border);border-radius:14px;background:#131d2a}article p{margin-bottom:0}footer{border-block-start:1px solid var(--border);border-block-end:0;color:var(--muted)}.skip{position:absolute;top:-100px}.skip:focus{top:0;background:#172636;padding:10px}.cta{display:inline-block;margin-top:12px}
+</style></head><body>
+<a class="skip" href="#main"><span data-ja="本文へ移動" data-en="Skip to content">本文へ移動</span></a>
+<header><nav class="wrap" aria-label="Navigation"><a class="brand" href="spatial-checker.html">Spatial Checker</a><a href="index.html"><span data-ja="アプリ一覧" data-en="All apps">アプリ一覧</span></a><a href="spatial-checker-support.html"><span data-ja="サポート" data-en="Support">サポート</span></a><button id="lang" type="button" hidden>English</button></nav></header>
+<main id="main" class="wrap"><section class="hero"><h1><span data-ja="プライバシーポリシー" data-en="Privacy Policy">プライバシーポリシー</span></h1><p class="lead">Spatial Checker / iPhone</p><p><span data-ja="2026年11月23日 更新" data-en="Updated November 23, 2026">2026年11月23日 更新</span></p></section><section class="grid" aria-label="Privacy policy">
+<article><h2><span data-ja="音源と設定" data-en="Audio files and settings">音源と設定</span></h2><p><span data-ja="読み込んだ音源、波形、再生位置、Cue、設定はiPhone上で処理・保存します。アプリは音源を開発者のサーバーに送信しません。" data-en="Imported audio, waveforms, playback position, cue points, and settings are processed and stored on your iPhone. The app does not upload audio to the developer.">読み込んだ音源、波形、再生位置、Cue、設定はiPhone上で処理・保存します。アプリは音源を開発者のサーバーに送信しません。</span></p></article>
+<article><h2><span data-ja="データ収集" data-en="Data collection">データ収集</span></h2><p><span data-ja="アプリにアカウント登録、広告、利用状況の分析、トラッキングはありません。" data-en="The app has no account registration, ads, usage analytics, or tracking.">アプリにアカウント登録、広告、利用状況の分析、トラッキングはありません。</span></p></article>
+<article><h2><span data-ja="コーヒー支援" data-en="Coffee Support">コーヒー支援</span></h2><p><span data-ja="任意のアプリ内購入はAppleが処理します。アプリは購入状態を確認します。開発者が決済カード情報を受け取ることはありません。" data-en="Apple processes optional in-app purchases. The app checks purchase status. The developer does not receive your payment card details.">任意のアプリ内購入はAppleが処理します。アプリは購入状態を確認します。開発者が決済カード情報を受け取ることはありません。</span></p></article>
+<article><h2><span data-ja="削除とお問い合わせ" data-en="Deletion and contact">削除とお問い合わせ</span></h2><p><span data-ja="アプリを削除すると、アプリ内に保存された音源のコピーと設定を端末から削除できます。メールでお問い合わせいただいた場合、メールアドレスとお送りいただいた内容は回答のために使用します。" data-en="Delete the app to remove its local audio copies and settings. If you email support, your email address and the information you send are used to respond.">アプリを削除すると、アプリ内に保存された音源のコピーと設定を端末から削除できます。メールでお問い合わせいただいた場合、メールアドレスとお送りいただいた内容は回答のために使用します。</span></p></article>
+<article><h2><span data-ja="連絡先" data-en="Contact">連絡先</span></h2><p><a href="mailto:mix.pass2026@gmail.com?subject=Spatial%20Checker%20Privacy">mix.pass2026@gmail.com</a></p></article></section></main><footer><div class="wrap">© Ikki Morimoto</div></footer>
+<script>
+const url = new URL(location.href);
+const button = document.querySelector('#lang');
+let english = url.searchParams.get('lang') === 'en';
+function renderLanguage() {
+  document.documentElement.lang = english ? 'en' : 'ja';
+  for (const label of document.querySelectorAll('[data-ja]')) {
+    label.textContent = english ? label.dataset.en : label.dataset.ja;
+  }
+  for (const link of document.querySelectorAll('a[href^="spatial-checker"]')) {
+    const destination = new URL(link.href);
+    if (english) destination.searchParams.set('lang', 'en');
+    else destination.searchParams.delete('lang');
+    link.href = destination.href;
+  }
+  button.textContent = english ? '日本語' : 'English';
+}
+button.hidden = false;
+button.addEventListener('click', () => {
+  english = !english;
+  if (english) url.searchParams.set('lang', 'en');
+  else url.searchParams.delete('lang');
+  history.replaceState(null, '', url);
+  renderLanguage();
+});
+renderLanguage();
+</script></body></html>
